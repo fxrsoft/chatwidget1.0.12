@@ -279,6 +279,11 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
 // Apply the image from the config
 chatbotToggler.style.backgroundImage = `url(${config.toggleButtonImage})`;
 
+if (config.toggleButtonImage) {
+  chatbotToggler.style.backgroundImage = `url(${config.toggleButtonImage})`;
+}
+
+
 let chatbot = document.querySelector('.chatbot');
 // Apply the position from the config
 chatbotToggler.style.position = 'fixed';
